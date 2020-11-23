@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据采集</title>
+</head>
+<body>
+    <button class="btn-class" data-num='7'>点击</button>
+    <div class="div-class" id="longan-div" data-name='demo' data-num='227'>hhhhhh</div>
+    <div class="div-class" id="longan-div2" data-name='demo2' data-num='撒大声地'>撒大声地</div>
+    <div class="div-class" id="longan-div3" data-name='demo3' data-num='发大幅度'>发大幅度</div>
+    <div class="div-class" id="longan-div4" data-name='demo4' data-num='的风帆股份'>的风帆股份</div>
+</body>
+</html>
+<script type="text/javascript" src="dist/md-sdk.js"></script>
+<script type="text/javascript">
+    // var _maq = _maq || [];
+    // _maq.push(['_setAccount', 'uuid']);
+    // (function () {
+    //     var ma = document.createElement('script');
+    //     ma.type = 'text/javascript';
+    //     ma.async = true;
+    //     ma.src = "../dist/md-sdk.min.js";
+    //     var s = document.getElementsByTagName('script')[0];
+    //     s.parentNode.insertBefore(ma, s);
+
+    // })();
+    mdsdk.init();
+    mdsdk.setData({ serverUrl: "www.baidu.com" });
+    console.log(mdsdk);
+  </script>
